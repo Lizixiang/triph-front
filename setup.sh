@@ -1,5 +1,6 @@
 image_version=`date +%Y%m%d%H%M`;
 echo $image_version;
+pwd
 # cd vue2docker
 git pull --rebase origin master;
 docker stop vue2docker;
