@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="68a6dd01-08bc-4a41-aae8-40561c4178a1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="68a6dd01-08bc-4a41-aae8-40561c4178a1" name="Default Changelist" comment="修改config/index.js配置文件">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/nginx.conf" afterDir="false" />
     </list>
@@ -18,10 +17,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/login.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="193">
+              <caret line="77" column="31" selection-start-line="77" selection-start-column="31" selection-end-line="77" selection-end-column="31" />
+              <folding>
+                <element signature="n#style#0;n#el-form#0;n#el-col#0;n#el-row#0;n#el-main#0;n#el-container#0;n#template#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="35" column="32" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
+            <state relative-caret-position="94">
+              <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#140#161#0" expanded="true" />
@@ -33,8 +44,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="25" column="14" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="14" />
+            <state relative-caret-position="225">
+              <caret line="15" column="40" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build/build.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -42,8 +62,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/nginx.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="35" column="23" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
+            <state relative-caret-position="120">
+              <caret line="50" column="50" lean-forward="true" selection-start-line="50" selection-start-column="50" selection-end-line="50" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -52,65 +72,7 @@
         <entry file="file://$PROJECT_DIR$/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/setup.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/reptile/list.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2417">
-              <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/technique/add.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="95" column="15" selection-start-line="95" selection-start-column="15" selection-end-line="95" selection-end-column="15" />
-              <folding>
-                <element signature="n#style#0;n#el-select#0;n#el-form-item#1;n#el-form#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#el-select#0;n#el-form-item#2;n#el-form#0;n#template#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/technique/edit.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="94" column="14" selection-start-line="94" selection-start-column="14" selection-end-line="94" selection-end-column="14" />
-              <folding>
-                <element signature="n#style#0;n#span#0;n#el-form#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#el-select#0;n#el-form-item#1;n#el-form#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#el-select#0;n#el-form-item#2;n#el-form#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#quill-editor#0;n#el-form#0;n#template#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/technique/list.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="103">
-              <caret line="329" column="33" selection-start-line="329" selection-start-column="33" selection-end-line="329" selection-end-column="33" />
-              <folding>
-                <element signature="n#style#0;n#el-table#0;n#div#0;n#el-tab-pane#0;n#el-tabs#0;n#template#0;n#!!top" expanded="true" />
-              </folding>
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -126,11 +88,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>reptileEdit</find>
-      <find>tecForm</find>
-      <find>add</find>
-      <find>tabVal</find>
-      <find>editorOption</find>
       <find>options</find>
       <find>editRow</find>
       <find>onEditorChange</find>
@@ -156,6 +113,11 @@
       <find>docker</find>
       <find>80</find>
       <find>-d</find>
+      <find>warn</find>
+      <find>assetsPublicPath</find>
+      <find>proxy</find>
+      <find>login</find>
+      <find>proxyTable</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -167,7 +129,6 @@
         <option value="$PROJECT_DIR$/src/components/main/ddd.vue" />
         <option value="$PROJECT_DIR$/src/components/main/main.vue" />
         <option value="$PROJECT_DIR$/.eslintrc.js" />
-        <option value="$PROJECT_DIR$/config/index.js" />
         <option value="$PROJECT_DIR$/build/webpack.base.conf.js" />
         <option value="$PROJECT_DIR$/src/components/HelloWorld.vue" />
         <option value="$PROJECT_DIR$/src/App.vue" />
@@ -189,6 +150,7 @@
         <option value="$PROJECT_DIR$/nginx/nginx.conf" />
         <option value="$PROJECT_DIR$/.dockerignore" />
         <option value="$PROJECT_DIR$/Dockerfile" />
+        <option value="$PROJECT_DIR$/config/index.js" />
         <option value="$PROJECT_DIR$/nginx.conf" />
       </list>
     </option>
@@ -216,7 +178,28 @@
             <path>
               <item name="vue_demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="vue_demo" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue_demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue_demo" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue_demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue_demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue_demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue_demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue_demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue_demo" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -301,7 +284,7 @@
       <workItem from="1597643000855" duration="8104000" />
       <workItem from="1597813520692" duration="16728000" />
       <workItem from="1597837023928" duration="57054000" />
-      <workItem from="1598445627514" duration="48842000" />
+      <workItem from="1598445627514" duration="66373000" />
     </task>
     <task id="LOCAL-00001" summary="commit setup.sh">
       <created>1598942507350</created>
@@ -387,11 +370,39 @@
       <option name="project" value="LOCAL" />
       <updated>1599041501177</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="修改nginx配置文件">
+      <created>1599042139096</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1599042139096</updated>
+    </task>
+    <task id="LOCAL-00014" summary="修改config/index.js配置文件">
+      <created>1599099709279</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1599099709279</updated>
+    </task>
+    <task id="LOCAL-00015" summary="修改config/index.js配置文件">
+      <created>1599111037520</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1599111037520</updated>
+    </task>
+    <task id="LOCAL-00016" summary="修改config/index.js配置文件">
+      <created>1599125329660</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1599125329661</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="211510000" />
+    <option name="totallyTimeSpent" value="229041000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -422,7 +433,7 @@
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4995958" weight="0.32978722" />
       <window_info anchor="bottom" id="TypeScript" order="7" weight="0.32978722" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.497979" weight="0.312611" />
-      <window_info active="true" anchor="bottom" id="Docker" order="9" visible="true" weight="0.49023092" />
+      <window_info active="true" anchor="bottom" id="Docker" order="9" visible="true" weight="0.60035527" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.502021" side_tool="true" weight="0.312611" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" />
@@ -456,30 +467,10 @@
     <MESSAGE value="修改Dockerfile配置文件" />
     <MESSAGE value="nginx配置root权限" />
     <MESSAGE value="修改nginx配置文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改nginx配置文件" />
+    <MESSAGE value="修改config/index.js配置文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改config/index.js配置文件" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/build/webpack.dev.conf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/vue-template-compiler/browser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="2270" lean-forward="true" selection-start-line="2270" selection-end-line="2270" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/element-ui/packages/row/src/row.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-476">
@@ -491,13 +482,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="314">
           <caret line="1263" column="4" selection-start-line="1263" selection-start-column="4" selection-end-line="1263" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/webpack.base.conf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="42" column="26" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -607,13 +591,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/vue/types/vue.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/element-ui/src/utils/util.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -673,16 +650,6 @@
           <caret line="93" column="12" lean-forward="true" selection-start-line="93" selection-start-column="12" selection-end-line="93" selection-end-column="12" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/login.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="77" column="31" selection-start-line="77" selection-start-column="31" selection-end-line="77" selection-end-column="31" />
-          <folding>
-            <element signature="n#style#0;n#el-form#0;n#el-col#0;n#el-row#0;n#el-main#0;n#el-container#0;n#template#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -762,23 +729,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/setup.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/prod.env.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/dev.env.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -786,10 +736,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/setup.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/vue/types/vue.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="70" column="2" selection-start-line="70" selection-start-column="2" selection-end-line="70" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/login.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="77" column="31" selection-start-line="77" selection-start-column="31" selection-end-line="77" selection-end-column="31" />
+          <folding>
+            <element signature="n#style#0;n#el-form#0;n#el-col#0;n#el-row#0;n#el-main#0;n#el-container#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="32" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
+        <state relative-caret-position="94">
+          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#140#161#0" expanded="true" />
@@ -797,17 +778,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/prod.env.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/webpack.prod.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-735">
+          <caret line="65" column="19" lean-forward="true" selection-start-line="65" selection-start-column="19" selection-end-line="65" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/webpack.base.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/webpack.dev.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="39" column="14" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/build.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="25" column="14" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="14" />
+        <state relative-caret-position="225">
+          <caret line="15" column="40" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/nginx.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="23" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
+        <state relative-caret-position="120">
+          <caret line="50" column="50" lean-forward="true" selection-start-line="50" selection-start-column="50" selection-end-line="50" selection-end-column="50" />
         </state>
       </provider>
     </entry>
