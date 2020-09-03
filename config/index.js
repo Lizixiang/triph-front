@@ -61,6 +61,18 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: './',
 
+    proxyTable: {
+      // 配置跨域
+      '/api': { //代理接口前缀为/api的请求
+        target: 'http://119.45.154.185:8889/', //需要代理到的目标地址
+        ws: true,
+        changOrigin: true, //是否跨域
+        pathRewrite: {
+          '^/api': '' //重写路径
+        }
+      }
+    },
+
     /**
      * Source Maps
      */
