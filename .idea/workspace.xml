@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="68a6dd01-08bc-4a41-aae8-40561c4178a1" name="Default Changelist" comment="修改config/index.js配置文件">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/nginx.conf" afterDir="false" />
-    </list>
+    <list default="true" id="68a6dd01-08bc-4a41-aae8-40561c4178a1" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +26,18 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/technique/list.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="148">
+              <caret line="320" column="25" selection-start-line="320" selection-start-column="22" selection-end-line="320" selection-end-column="25" />
+              <folding>
+                <element signature="n#style#0;n#el-table#0;n#div#0;n#el-tab-pane#0;n#el-tabs#0;n#template#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="94">
@@ -44,7 +53,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
+            <state relative-caret-position="180">
               <caret line="15" column="40" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="40" />
             </state>
           </provider>
@@ -62,8 +71,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/nginx.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="50" column="50" lean-forward="true" selection-start-line="50" selection-start-column="50" selection-end-line="50" selection-end-column="50" />
+            <state relative-caret-position="97">
+              <caret line="50" column="31" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -88,7 +97,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>options</find>
       <find>editRow</find>
       <find>onEditorChange</find>
       <find>router</find>
@@ -117,6 +125,7 @@
       <find>assetsPublicPath</find>
       <find>proxy</find>
       <find>login</find>
+      <find>8889</find>
       <find>proxyTable</find>
     </findStrings>
   </component>
@@ -195,6 +204,13 @@
               <item name="vue_demo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue_demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue_demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="technique" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="vue_demo" type="b2602c69:ProjectViewProjectNode" />
@@ -284,7 +300,7 @@
       <workItem from="1597643000855" duration="8104000" />
       <workItem from="1597813520692" duration="16728000" />
       <workItem from="1597837023928" duration="57054000" />
-      <workItem from="1598445627514" duration="66373000" />
+      <workItem from="1598445627514" duration="68536000" />
     </task>
     <task id="LOCAL-00001" summary="commit setup.sh">
       <created>1598942507350</created>
@@ -398,11 +414,25 @@
       <option name="project" value="LOCAL" />
       <updated>1599125329661</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="修改nginx配置文件">
+      <created>1599125996836</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1599125996836</updated>
+    </task>
+    <task id="LOCAL-00018" summary="修改nginx配置文件">
+      <created>1599128181632</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1599128181632</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="229041000" />
+    <option name="totallyTimeSpent" value="231204000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -417,7 +447,7 @@
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24252222" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24252222" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -433,7 +463,7 @@
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4995958" weight="0.32978722" />
       <window_info anchor="bottom" id="TypeScript" order="7" weight="0.32978722" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.497979" weight="0.312611" />
-      <window_info active="true" anchor="bottom" id="Docker" order="9" visible="true" weight="0.60035527" />
+      <window_info anchor="bottom" id="Docker" order="9" visible="true" weight="0.43694493" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.502021" side_tool="true" weight="0.312611" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" />
@@ -466,9 +496,9 @@
     <MESSAGE value="配置nginx文件" />
     <MESSAGE value="修改Dockerfile配置文件" />
     <MESSAGE value="nginx配置root权限" />
-    <MESSAGE value="修改nginx配置文件" />
     <MESSAGE value="修改config/index.js配置文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改config/index.js配置文件" />
+    <MESSAGE value="修改nginx配置文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改nginx配置文件" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/package.json">
@@ -692,16 +722,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/technique/list.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="329" column="33" selection-start-line="329" selection-start-column="33" selection-end-line="329" selection-end-column="33" />
-          <folding>
-            <element signature="n#style#0;n#el-table#0;n#div#0;n#el-tab-pane#0;n#el-tabs#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/reptile/list.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2417">
@@ -757,16 +777,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/login.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="77" column="31" selection-start-line="77" selection-start-column="31" selection-end-line="77" selection-end-column="31" />
-          <folding>
-            <element signature="n#style#0;n#el-form#0;n#el-col#0;n#el-row#0;n#el-main#0;n#el-container#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="94">
@@ -811,15 +821,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
+        <state relative-caret-position="180">
           <caret line="15" column="40" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/login.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="77" column="31" selection-start-line="77" selection-start-column="31" selection-end-line="77" selection-end-column="31" />
+          <folding>
+            <element signature="n#style#0;n#el-form#0;n#el-col#0;n#el-row#0;n#el-main#0;n#el-container#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/technique/list.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="320" column="25" selection-start-line="320" selection-start-column="22" selection-end-line="320" selection-end-column="25" />
+          <folding>
+            <element signature="n#style#0;n#el-table#0;n#div#0;n#el-tab-pane#0;n#el-tabs#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/nginx.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="50" column="50" lean-forward="true" selection-start-line="50" selection-start-column="50" selection-end-line="50" selection-end-column="50" />
+        <state relative-caret-position="97">
+          <caret line="50" column="31" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
         </state>
       </provider>
     </entry>
