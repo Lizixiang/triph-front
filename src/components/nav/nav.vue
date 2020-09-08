@@ -13,7 +13,9 @@
       </template>
       <el-menu-item-group>
         <el-menu-item index="/technique/list">技术列表</el-menu-item>
+        <el-menu-item index="/technique/cate">技术分类</el-menu-item>
       </el-menu-item-group>
+
     </el-submenu>
     <el-submenu index="2">
       <template slot="title">

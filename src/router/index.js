@@ -9,6 +9,7 @@ import navigation from '@/components/nav/nav'
 import techniqueList from '@/components/technique/list'
 import reptileList from '@/components/reptile/list'
 import reptileEdit from '@/components/reptile/edit'
+import techniqueCate from '@/components/technique/cate'
 
 
 Vue.use(Router)
@@ -61,6 +62,26 @@ const router = new Router({
               meta: {'title': '新增'}
             }
           ]
+        },
+        {
+          path: '/technique/cate',
+          name: 'techniqueCate',
+          component: techniqueCate,
+          meta: {'title': '技术分类'}
+          // children: [
+          //   {
+          //     path: '/technique/edit',
+          //     name: 'editTechinique',
+          //     component: editTechinique,
+          //     meta: {'title': '修改'}
+          //   },
+          //   {
+          //     path: '/technique/add',
+          //     name: 'addTechinique',
+          //     component: addTechinique,
+          //     meta: {'title': '新增'}
+          //   }
+          // ]
         },
         {
           path: '/reptile/list',

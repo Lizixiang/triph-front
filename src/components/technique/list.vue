@@ -78,7 +78,7 @@
           <el-table-column header-align="center" type="selection" width="35"/>
           <el-table-column header-align="center" prop="questionDescription" label="标题" width="400"
                            show-overflow-tooltip="true"/>
-          <el-table-column header-align="center" prop="techniqueId" label="分类" width="60"/>
+          <el-table-column header-align="center" prop="techniqueId" label="分类" :formatter="formatCate" width="60"/>
           <el-table-column header-align="center" prop="referUrl" label="参考链接" width="80">
             <template slot-scope="scope">
               <el-link :href="scope.row.referUrl"
@@ -109,7 +109,7 @@
           @size-change="handleSizeChange"
           @current-change="handleCurrentChange"
           :current-page="currentPage"
-          :page-sizes="[100, 200, 300, 400]"
+          :page-sizes="[10, 50, 100, 150, 200]"
           :page-size="size"
           :hide-on-single-page="show"
           layout="total, sizes, prev, pager, next, jumper"
@@ -149,7 +149,7 @@
         },
         tableData: [],
         currentPage: 1,
-        size: 100,
+        size: 10,
         show: false,
         total: 0,
         option: {
@@ -219,9 +219,13 @@
       },
       handleSizeChange(val) {
         console.log(`每页 ${val} 条`);
+        this.size = val;
+        this.getJson();
       },
       handleCurrentChange(val) {
         console.log(`当前页: ${val}`);
+        this.currentPage = val;
+        this.getJson()
       },
       // 初始化下拉框
       initOption() {
@@ -232,6 +236,13 @@
             that_.option.sourceOption = response.data.sourceOption;
             that_.option.statusOption = response.data.statusOption;
           });
+      },
+      formatCate(row, column) {
+        let t = this.option.cateOption.find(value => value.value === (row.techniqueId+''));
+        if (t) {
+          return t.text;
+        }
+        return '';
       },
       formatSource(row, column) {
         let t = this.option.sourceOption.find(value => value.value === row.source);

@@ -81,7 +81,7 @@
           @size-change="handleSizeChange"
           @current-change="handleCurrentChange"
           :current-page="currentPage"
-          :page-sizes="[100, 200, 300, 400]"
+          :page-sizes="[10, 50, 100, 150, 200]"
           :page-size="size"
           :hide-on-single-page="show"
           layout="total, sizes, prev, pager, next, jumper"
@@ -115,7 +115,7 @@
         },
         tableData: [],
         currentPage: 0,
-        size: 100,
+        size: 10,
         show: false,
         total: 0,
         option: {
@@ -190,9 +190,13 @@
       },
       handleSizeChange(val) {
         console.log(`每页 ${val} 条`);
+        this.size = val;
+        this.getJson();
       },
       handleCurrentChange(val) {
         console.log(`当前页: ${val}`);
+        this.currentPage = val;
+        this.getJson()
       },
       formatSource(row, column) {
         let t = this.option.sourceOption.find(value => value.value === row.source);
