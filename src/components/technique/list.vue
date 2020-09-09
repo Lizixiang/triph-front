@@ -74,7 +74,7 @@
             <el-button type="danger" @click="del">删除</el-button>
           </el-form-item>
         </el-form>
-        <el-table ref="table" @row-dblclick="dbClick" :data="tableData" border stripe height="200" style="width: 100%;">
+        <el-table v-loading="tableVis" ref="table" @row-dblclick="dbClick" :data="tableData" border stripe height="200" style="width: 100%;">
           <el-table-column header-align="center" type="selection" width="35"/>
           <el-table-column header-align="center" prop="questionDescription" label="标题" width="400"
                            show-overflow-tooltip="true"/>
@@ -140,6 +140,7 @@
     },
     data() {
       return {
+        tableVis: true,
         qForm: {
           title: '',
           cate: '',
@@ -199,6 +200,7 @@
     },
     methods: {
       getJson() {
+        this.tableVis = true;
         axios.post('/api/tech/data/get', {
           title: this.qForm.title,
           cate: this.qForm.cate,
@@ -209,7 +211,7 @@
           current: this.currentPage,
           size: this.size
         }).then(response => {
-          console.log(response);
+          this.tableVis = false;
           this.tableData = response.data.records;
           this.total = response.data.total;
         });
@@ -349,6 +351,7 @@
       // 相当于jquery中的$.ready()  当dom元素全部渲染完成再执行
       this.$nextTick(function () {
         this.initOption();
+        this.getJson();
       })
     }
   }

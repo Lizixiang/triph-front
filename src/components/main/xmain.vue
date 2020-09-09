@@ -47,7 +47,7 @@
             </el-col>
             <el-divider />
             <el-col :span="24" class="content-wrapper">
-              <transition name="fade" mode="out-in">
+              <transition name="el-fade-in" mode="out-in">
                 <keep-alive>
                   <router-view :key="activeTime"></router-view>
                 </keep-alive>
