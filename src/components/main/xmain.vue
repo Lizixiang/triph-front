@@ -30,6 +30,7 @@
                 ref="tag"
                 :key="tag.path"
                 :to="{ path: tag.path, query: tag.query, fullPath: tag.fullPath }"
+                @click.native="toTag(tag.name)"
                 tag="span"
                 style="padding-right: 2px;margin-bottom: 20px;">
                 <el-tag
@@ -40,6 +41,7 @@
                   :disable-transitions="false"
                   @close="handleClose(tag)">
                   {{ tag.title }}
+                  <i v-if="tag.name !== 'index'" class="el-icon-refresh-right icon-refresh" @click="flushTag"></i>
                 </el-tag>
               </router-link>
             </el-col>
@@ -47,7 +49,7 @@
             <el-col :span="24" class="content-wrapper">
               <transition name="fade" mode="out-in">
                 <keep-alive>
-                  <router-view></router-view>
+                  <router-view :key="activeTime"></router-view>
                 </keep-alive>
               </transition>
             </el-col>
@@ -73,7 +75,8 @@
           path: '/index/index',
           name: 'index',
           closable: false
-        }]
+        }],
+        activeTime: ''
         // cachedViews: []
       }
     },
@@ -114,6 +117,19 @@
       },
       isActive(tag) {
         return tag.name == this.editableTabsValue;
+      },
+      // 改变key值 来刷新当前路由的页面
+      flushTag() {
+        var ev = window.event || arguments.callee.caller.arguments[0];
+        if (window.event) {
+          ev.cancelBubble = true;
+        } else {
+          ev.stopPropagation();
+        }
+        this.activeTime = new Date().getTime()+'';
+      },
+      toTag(tagName) {
+        this.activeTime = tagName;
       }
     },
     watch: {
@@ -121,6 +137,7 @@
         console.log(this.$route);
         this.addTags();
         this.moveToCurrentTab();
+        this.toTag(this.$route.name);
       }
     },
     computed: {},
@@ -144,6 +161,16 @@
     color: #333;
     /*text-align: center;*/
     /*line-height: 200px;*/
+  }
+
+  .icon-refresh {
+    margin-right: -6px !important;
+    border-radius: 50%;
+  }
+
+  .icon-refresh:hover{
+    background-color: #409eff;
+    color: white;
   }
 
   /*.el-main {*/

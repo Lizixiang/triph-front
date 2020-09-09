@@ -110,7 +110,7 @@
       return {
         qForm: {
           title: '',
-          status: '',
+          status: '0',
           qstime: []/*[new Date(2000, 10, 10, 10, 10), new Date(2000, 10, 11, 10, 10)]*/
         },
         tableData: [],
@@ -227,6 +227,7 @@
           this.tabs.push(obj);
         } else {
           this.$refs.child.forEach(value => {
+            console.log(value);
             value.resetForm('tecForm');
             value.row = row;
             value.showData();

@@ -4,7 +4,7 @@
       <el-input type="text" placeholder="请输入标题" v-model="tecForm.title" maxlength="200" show-word-limit/>
     </el-form-item>
     <el-form-item label="分类" prop="cateId">
-      <el-select style="float: left;" v-model="tecForm.cateId" filterable placeholder="请选择">
+      <el-select style="float: left;" v-model="tecForm.cateId" filterable placeholder="请选择" clearable filterable>
         <el-option
           v-for="item in option.cateOption"
           :key="item.value"

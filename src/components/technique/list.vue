@@ -17,7 +17,7 @@
             </el-col>
             <el-col :span="8">
               <el-form-item label="分类">
-                <el-select v-model="qForm.cate" placeholder="分类">
+                <el-select v-model="qForm.cate" placeholder="分类" clearable filterable>
                   <el-option
                     v-for="item in option.cateOption"
                     :key="item.value"
@@ -90,7 +90,7 @@
           </el-table-column>
           <el-table-column header-align="center" prop="source" label="来源"
                            :formatter="formatSource"
-                           width="60"/>
+                           width="100"/>
           <el-table-column header-align="center" prop="status" label="状态"
                            :formatter="formatStatus"
                            :key=""
@@ -274,6 +274,7 @@
           this.tabs.push(obj);
         } else {
           this.$refs.addchilid.forEach(value => {
+            console.log(value);
             value.resetForm('tecForm');
           })
         }

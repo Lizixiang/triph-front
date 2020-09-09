@@ -27,7 +27,7 @@
       title="选择分类"
       :visible.sync="dialogVisible"
       width="30%">
-      <el-select v-model="cateId" clearable placeholder="请选择">
+      <el-select v-model="cateId" clearable placeholder="请选择" clearable filterable>
         <el-option
           v-for="item in option.cateOption"
           :key="item.value"
@@ -159,6 +159,10 @@
               this.$message.error(response.data.message);
             }
           });
+      },
+      resetForm(formName) {
+        this.$refs[formName].resetFields();
+        this.tecForm.content = '';
       }
     },
     computed: {

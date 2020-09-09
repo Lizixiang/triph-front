@@ -5,7 +5,7 @@
     </el-form-item>
     <span style="color: #999aaa;">{{createTimme}}</span>
     <el-form-item label="分类" prop="cateId">
-      <el-select style="float: left;" v-model="tecForm.cateId" filterable placeholder="请选择">
+      <el-select style="float: left;" v-model="tecForm.cateId" filterable placeholder="请选择" clearable filterable>
         <el-option
           v-for="item in option.cateOption"
           :key="item.value"
