@@ -1,6 +1,6 @@
 <template>
   <el-container style="height: 570px;">
-    <el-header>个人技术总结</el-header>
+    <el-header></el-header>
     <el-container>
       <el-aside width="200px">
         <Nav></Nav>

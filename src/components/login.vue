@@ -4,7 +4,7 @@
     <el-main>
       <el-row :gutter="20">
         <el-col :span="9" :offset="6">
-          <el-form :model="ruleForm" style="padding: 30px 40px 20px 10px;box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);"
+          <el-form :model="ruleForm" v-loading="loginVis" style="padding: 30px 40px 20px 10px;box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);"
                    status-icon :rules="rules" ref="ruleForm" label-width="100px"
                    class="demo-ruleForm">
             <el-form-item label="用户名" prop="username">
@@ -59,7 +59,8 @@
           pass: [
             {validator: validatePass, trigger: 'blur'}
           ]
-        }
+        },
+        loginVis: false
       };
     },
     methods: {
@@ -72,10 +73,15 @@
         this.$refs[formName].validate((valid) => {
           if (valid) {
             var that = this;
+            this.loginVis = true;
             axios.post('/api/login?username='+ this.ruleForm.username +'&password=' + this.ruleForm.pass)
               .then(response => {
-                console.log(response);
+                this.loginVis = false;
                 if (response.data.success) {
+                  this.$message({
+                    message: '登录成功!',
+                    type: 'success'
+                  });
                   that.$store.commit('changeLogin', 'Bearer ' + response.data.data);
                   that.$router.push('/index/index');
                 } else {
