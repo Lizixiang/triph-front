@@ -22,7 +22,7 @@ Vue.use(axios)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
-new Vue({
+window.vm = new Vue({
   el: '#app',
   router,
   store,
@@ -44,6 +44,9 @@ axios.interceptors.response.use(value => {
   if (value.status === 401) {
     localStorage.removeItem('Authorization');
     location.href = '/';
+  }
+  if (value.data.success === false) {
+    window.vm.$message.error(value.data.message);
   }
   return value;
 }, error => {

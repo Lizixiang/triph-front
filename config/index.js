@@ -13,7 +13,7 @@ module.exports = {
     proxyTable: {
       // 配置跨域
       '/api': { //代理接口前缀为/api的请求
-        target: 'http://localhost:8889/', //需要代理到的目标地址
+        target: 'http://localhost:8093/triph-back', //需要代理到的目标地址  这里的目标地址是网关（由网关同意路由到服务地址）
         ws: true,
         changOrigin: true, //是否跨域
         pathRewrite: {

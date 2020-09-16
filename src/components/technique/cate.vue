@@ -19,7 +19,7 @@
       @blur="handleInputBlur"
     >
     </el-input>
-    <el-button v-else class="button-new-tag" size="small" @click="showInput">+ 添加分类</el-button>
+    <el-button v-else class="button-new-tag" size="mini" @click="showInput">+ 添加分类</el-button>
   </div>
 </template>
 
@@ -113,7 +113,8 @@
 
   .button-new-tag {
     margin-left: 10px;
-    height: 32px;
+    margin-top: 5px;
+    height: 29px;
     line-height: 30px;
     padding-top: 0;
     padding-bottom: 0;
@@ -121,6 +122,7 @@
 
   .input-new-tag {
     width: 90px;
+    margin-top: 5px;
     margin-left: 10px;
     vertical-align: bottom;
   }
