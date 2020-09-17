@@ -74,15 +74,16 @@
           if (valid) {
             var that = this;
             this.loginVis = true;
-            axios.post('/api/login?username='+ this.ruleForm.username +'&password=' + this.ruleForm.pass)
+            axios.post('/auth/oauth/token?username='+ this.ruleForm.username +'&password=' + this.ruleForm.pass)
               .then(response => {
+                console.log(response)
                 this.loginVis = false;
-                if (response.data.success) {
+                if (response.status === 200) {
                   this.$message({
                     message: '登录成功!',
                     type: 'success'
                   });
-                  that.$store.commit('changeLogin', 'Bearer ' + response.data.data);
+                  that.$store.commit('changeLogin', 'Bearer ' + response.data.access_token);
                   that.$router.push('/index/index');
                 } else {
                   that.$message.error(response.data.message);

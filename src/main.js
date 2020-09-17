@@ -32,7 +32,7 @@ window.vm = new Vue({
 
 // 添加拦截器，在请求头中增加oauth token验证
 axios.interceptors.request.use(value => {
-  if (localStorage.getItem('Authorization')) {
+  if (value.url.indexOf("/oauth/token") === -1 && localStorage.getItem('Authorization')) {
     value.headers.Authorization = localStorage.getItem('Authorization');
   }
   return value;
@@ -45,7 +45,7 @@ axios.interceptors.response.use(value => {
     localStorage.removeItem('Authorization');
     location.href = '/';
   }
-  if (value.data.success === false) {
+  if (value.data.success && value.data.success === false) {
     window.vm.$message.error(value.data.message);
   }
   return value;

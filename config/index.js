@@ -19,6 +19,14 @@ module.exports = {
         pathRewrite: {
           '^/api': '' //重写路径
         }
+      },
+      '/auth': { //代理接口前缀为/api的请求
+        target: 'http://localhost:8093/triph-auth', //需要代理到的目标地址  这里的目标地址是网关（由网关同意路由到服务地址）
+        ws: true,
+        changOrigin: true, //是否跨域
+        pathRewrite: {
+          '^/auth': '' //重写路径
+        }
       }
     },
     // Various Dev Server settings
