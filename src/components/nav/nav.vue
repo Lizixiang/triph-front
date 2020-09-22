@@ -6,24 +6,20 @@
       <i class="el-icon-menu"></i>
       <span slot="title">首页</span>
     </el-menu-item>
-    <el-submenu index="1">
-      <template slot="title">
-        <i class="el-icon-document"></i>
-        <span slot="title">个人技术</span>
-      </template>
-      <el-menu-item-group>
-        <el-menu-item index="/technique/list">技术列表</el-menu-item>
-        <el-menu-item index="/technique/cate">技术分类</el-menu-item>
-      </el-menu-item-group>
 
-    </el-submenu>
-    <el-submenu index="2">
+    <el-submenu v-for="item in leftMenu"
+                :key="item.id"
+                :index="item.id.toString()">
       <template slot="title">
         <i class="el-icon-document"></i>
-        <span slot="title">爬虫</span>
+        <span slot="title">{{item.authName}}</span>
       </template>
-      <el-menu-item-group>
-        <el-menu-item index="/reptile/list">爬虫数据</el-menu-item>
+      <el-menu-item-group v-if="item.subMenu != null && item.subMenu.length > 0">
+        <el-menu-item v-for="value in item.subMenu"
+                      :key="value.id"
+                      :index="value.authUrl">
+          {{value.authName}}
+        </el-menu-item>
       </el-menu-item-group>
     </el-submenu>
   </el-menu>
@@ -31,11 +27,23 @@
 
 <script>
   export default {
-    name: "nav",
+    name: "snav",
     data() {
       return {
-        isCollapse: false
+        isCollapse: false,
+        leftMenu: []
       }
+    },
+    methods: {
+      switchNav(submenu) {
+        this.leftMenu = submenu;
+      },
+      initMenu() {
+        this.leftMenu = JSON.parse(localStorage.getItem('leftMenu'));
+      }
+    },
+    mounted() {
+      this.initMenu();
     },
     computed: {
       activeMenu() {
@@ -46,7 +54,7 @@
           return meta.activeMenu
         }
         return path
-      },
+      }
     }
   }
 </script>

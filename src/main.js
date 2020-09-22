@@ -15,7 +15,8 @@ import 'quill/dist/quill.snow.css'
 
 Vue.use(ElementUI, {size: 'small', zindex: 3000})
 Vue.use(quillEditor)
-Vue.use(axios)
+// Vue.use(axios) // 这种写法会报：Uncaught (in promise) TypeError: Cannot read property 'protocol' of undefined
+Vue.prototype.$http = axios;
 
 
 

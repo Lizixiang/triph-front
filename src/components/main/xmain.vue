@@ -1,30 +1,16 @@
 <template>
   <el-container style="height: 570px;">
-    <el-header></el-header>
+    <el-header>
+      <Head @switchNav="switchNav"></Head>
+    </el-header>
     <el-container>
       <el-aside width="200px">
-        <Nav></Nav>
+        <Nav ref="snav"></Nav>
       </el-aside>
       <el-container>
         <el-main style="padding-top: 5px;">
           <el-row>
             <el-col :span="24">
-              <!--              <el-tab-pane-->
-              <!--                v-for="(item, index) in editableTabs"-->
-              <!--                :key="item.path"-->
-              <!--                :label="item.title"-->
-              <!--                :to="{ path: item.path, query: item.query, fullPath: item.fullPath }"-->
-              <!--                :name="item.name"-->
-              <!--                :closable="item.closable"-->
-              <!--              >-->
-              <!--                <el-col :span="24" class="content-wrapper">-->
-              <!--                  <transition name="fade" mode="out-in">-->
-              <!--                    <keep-alive :include="cachedViews">-->
-              <!--                      <router-view :key="item.path"></router-view>-->
-              <!--                    </keep-alive>-->
-              <!--                  </transition>-->
-              <!--                </el-col>-->
-              <!--              </el-tab-pane>-->
               <router-link
                 v-for="tag in editableTabs"
                 ref="tag"
@@ -63,10 +49,11 @@
 
 <script>
   import Nav from "@/components/nav/nav";
+  import Head from "@/components/head/head";
 
   export default {
     name: 'xmain',
-    components: {Nav},
+    components: {Nav, Head},
     data() {
       return {
         editableTabsValue: 'index',
@@ -102,7 +89,6 @@
         this.editableTabsValue = this.$route.name;
       },
       handleClose(tag) {
-        console.log(tag);
         this.editableTabs.forEach(function (item, index, arr) {
           if (item.name === tag.name) {
             arr.splice(index, 1);
@@ -130,6 +116,9 @@
       },
       toTag(tagName) {
         this.activeTime = tagName;
+      },
+      switchNav(submenu) {
+        this.$refs.snav.switchNav(submenu);
       }
     },
     watch: {

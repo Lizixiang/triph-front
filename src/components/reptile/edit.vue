@@ -174,8 +174,10 @@
       }
     },
     mounted() {
-      this.showData();
-      this.initOption();
+      this.$nextTick(function () {
+        this.showData();
+        this.initOption();
+      })
     }
   }
 </script>

@@ -76,15 +76,21 @@
             this.loginVis = true;
             axios.post('/auth/oauth/token?username='+ this.ruleForm.username +'&password=' + this.ruleForm.pass)
               .then(response => {
-                console.log(response)
-                this.loginVis = false;
                 if (response.status === 200) {
                   this.$message({
                     message: '登录成功!',
                     type: 'success'
                   });
                   that.$store.commit('changeLogin', 'Bearer ' + response.data.access_token);
-                  that.$router.push('/index/index');
+                  axios.get('/auth/auth/getAuthoritiesByPrincipal')
+                    .then(res => {
+                      console.log(res);
+                      if (res.data.success) {
+                        this.loginVis = false;
+                        that.$store.commit('initMenu', JSON.stringify(res.data.data));
+                        that.$router.push('/index/index');
+                      }
+                    })
                 } else {
                   that.$message.error(response.data.message);
                 }

@@ -8,7 +8,7 @@
       :closable="item.closable"
     >
       <div v-show="item.name === 'list'" class="app-container">
-        <el-form inline="true" :model="qForm" size="mini" class="demo-form-inline">
+        <el-form inline :model="qForm" size="mini" class="demo-form-inline">
           <el-row :gutter="20">
             <el-col :span="8">
               <el-form-item label="标题">
@@ -77,7 +77,7 @@
         <el-table v-loading="tableVis" ref="table" @row-dblclick="dbClick" :data="tableData" border stripe height="200" style="width: 100%;">
           <el-table-column header-align="center" type="selection" width="35"/>
           <el-table-column header-align="center" prop="questionDescription" label="标题" width="400"
-                           show-overflow-tooltip="true"/>
+                           show-overflow-tooltip/>
           <el-table-column header-align="center" prop="techniqueId" label="分类" :formatter="formatCate" width="60"/>
           <el-table-column header-align="center" prop="referUrl" label="参考链接" width="80">
             <template slot-scope="scope">
