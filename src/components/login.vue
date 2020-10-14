@@ -63,8 +63,6 @@
         loginVis: false
       };
     },
-    methods: {
-    },
     mounted() {
 
     },

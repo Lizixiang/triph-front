@@ -10,6 +10,9 @@ import techniqueList from '@/components/technique/list'
 import reptileList from '@/components/reptile/list'
 import reptileEdit from '@/components/reptile/edit'
 import techniqueCate from '@/components/technique/cate'
+import authList from '@/components/auth/list'
+import roleList from '@/components/role/list'
+import orgList from '@/components/org/list'
 
 
 Vue.use(Router)
@@ -96,6 +99,24 @@ const router = new Router({
               meta: {'title': '修改'}
             }
           ]
+        },
+        {
+          path: '/auth/list',
+          name: 'authList',
+          component: authList,
+          meta: {'title': '权限列表'}
+        },
+        {
+          path: '/role/list',
+          name: 'roleList',
+          component: roleList,
+          meta: {'title': '角色列表'}
+        },
+        {
+          path: '/org/list',
+          name: 'orgList',
+          component: orgList,
+          meta: {'title': '组织列表'}
         }
       ]
     }

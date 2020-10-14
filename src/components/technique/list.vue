@@ -316,7 +316,6 @@
         }
       },
       del() {
-        console.log(this.$refs.table[0].selection)
         var selected = this.$refs.table[0].selection;
         if (selected.length === 0) {
           this.$message.error('请至少选择一条记录');
