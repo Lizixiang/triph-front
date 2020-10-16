@@ -11,6 +11,8 @@ const store = new Vuex.Store({
     menu: localStorage.getItem('menu') ? localStorage.getItem('menu') : '',
     // 左侧菜单
     leftMenu: localStorage.getItem('leftMenu') ? localStorage.getItem('leftMenu') : '',
+    // 用户名
+    userName: localStorage.getItem('userName') ? localStorage.getItem('userName') : '',
   },
   // 方法
   mutations: {
@@ -25,6 +27,10 @@ const store = new Vuex.Store({
     updateLeftMenu(state, leftMenu) {
       state.leftMenu = leftMenu;
       localStorage.setItem('leftMenu', leftMenu);
+    },
+    updateName(state, userName) {
+      state.userName = userName;
+      localStorage.setItem('userName', userName);
     }
   }
 });

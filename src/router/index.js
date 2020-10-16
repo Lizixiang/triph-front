@@ -13,6 +13,7 @@ import techniqueCate from '@/components/technique/cate'
 import authList from '@/components/auth/list'
 import roleList from '@/components/role/list'
 import orgList from '@/components/org/list'
+import userList from '@/components/user/list'
 
 
 Vue.use(Router)
@@ -117,6 +118,12 @@ const router = new Router({
           name: 'orgList',
           component: orgList,
           meta: {'title': '组织列表'}
+        },
+        {
+          path: '/user/list',
+          name: 'userList',
+          component: userList,
+          meta: {'title': '用户列表'}
         }
       ]
     }

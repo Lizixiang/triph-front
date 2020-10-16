@@ -53,6 +53,7 @@ axios.interceptors.response.use(value => {
 }, error => {
   if (error.response.status === 401) {
     localStorage.removeItem('Authorization');
+  } else if (error.response.status === 500) {
     location.href = '/';
   }
   return Promise.reject(error);

@@ -29,11 +29,12 @@
 <script>
 
   import axios from 'axios';
+  import md5 from 'js-md5'
 
   export default {
     name: 'HelloWorld',
     data() {
-      var validateUsernmae = (rule, value, callback) => {
+      var validateUsername = (rule, value, callback) => {
         if (value === '') {
           callback(new Error('请输入用户名'));
         } else {
@@ -54,7 +55,7 @@
         },
         rules: {
           username: [
-            {validator: validateUsernmae, trigger: 'blur'}
+            {validator: validateUsername, trigger: 'blur'}
           ],
           pass: [
             {validator: validatePass, trigger: 'blur'}
@@ -72,7 +73,7 @@
           if (valid) {
             var that = this;
             this.loginVis = true;
-            axios.post('/auth/oauth/token?username='+ this.ruleForm.username +'&password=' + this.ruleForm.pass)
+            axios.post('/auth/oauth/token?username='+ this.ruleForm.username +'&password=' + md5(this.ruleForm.pass))
               .then(response => {
                 if (response.status === 200) {
                   this.$message({
@@ -80,6 +81,7 @@
                     type: 'success'
                   });
                   that.$store.commit('changeLogin', 'Bearer ' + response.data.access_token);
+                  that.$store.commit('updateName', this.ruleForm.username);
                   axios.get('/auth/auth/getAuthoritiesByPrincipal')
                     .then(res => {
                       console.log(res);
@@ -93,7 +95,14 @@
                   that.$message.error(response.data.message);
                 }
               })
-              .catch(error => console.log(error))
+              .catch(error => {
+                if (error.response.status === 400) {
+                  this.$message.error('密码错误');
+                } else {
+                  this.$message.error(error.response.data.error_description);
+                }
+                this.loginVis = false;
+              })
           } else {
             return false;
           }
